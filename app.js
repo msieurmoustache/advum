@@ -26,7 +26,7 @@ app.use('/users', users);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
-    var err = new Error('Not Found');
+    var err = new Error('Page introuvée');
     err.status = 404;
     next(err);
 });
@@ -55,5 +55,8 @@ app.use(function(err, req, res, next) {
     });
 });
 
+app.listen(3000, function () {
+  console.log('Listening on port 3000!');
+});
 
 module.exports = app;

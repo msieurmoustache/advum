@@ -3,3 +3,18 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  .calendrier
+    .event
+      p
+        h2 
+            a(href="#variable") Dernier évènement annoncé
+        p(id="variable")  Description, texte, annonce, blablabla
+        
+    .event
+      p
+        h2 
+            a(href="#ad") Avant-dernier évènement annoncé
+        p(id="ad")  Description, texte, annonce, blablabla
+            
+        
