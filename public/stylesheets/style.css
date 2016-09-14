@@ -90,12 +90,18 @@ footer {
     width:100%;
     position:absolute;
     overflow:hidden;
+    margin-top:15%;
 
 
 }
 
  footer >a:hover {
      text-decoration:underline;
+}
+
+footer li {
+    list-style-type:none;
+
 }
 
 
@@ -138,4 +144,26 @@ footer {
 p:target {
     display:block;
 }
+
+.op, .datestamp, .reply {
+    display:inline;
+    padding:5%;
+    font-size:70%;
+    text-align:left;
+}
+
+.op{
+    padding-left:0;
+}
+
+.post {
+    margin-left:4%;
+    padding:2px;
+}
+
+.post-content {
+    padding:0;
+    margin:-1%;
+}
+
 

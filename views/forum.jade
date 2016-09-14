@@ -20,14 +20,27 @@ block content
   
   .all
     .sub(id="annonces") 
-        h2 Annonces
+        h2 
+            a(href="") Annonces
         
         .post
-            .op
-            .datestamp
+            .op 
+                a(href="") FakeUser
+            .datestamp soumis le 2016-05-26
             .post-content
-                p
+                p Test, please don't upvote
             .reply
-            
-            
+                a(href="") Répondre
+            .post
+                .op 
+                    a(href="") NestedFakeUser
+                .datestamp soumis le 2016-05-26
+                .post-content
+                    p NestedTest, please don't upvote
+                .reply
+                    a(href="") Répondre    
+    .sub(id="Recrutement")
+    .sub(id="Présentation")
+    .sub(id="Projets")
+    .sub(id="")
             
