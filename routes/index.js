@@ -19,13 +19,4 @@ router.get('/forum', stormpath.getUser, function(req, res) {
   res.render('forum', { title: 'Forum' });
 });
 
-/* GET contact page. */
-router.get('/contact',  stormpath.getUser, function(req, res) {
-  res.render('contact', { title: 'Contact' });
-});
-
-/* GET profile page. */
-
-router.get('/profile',stormpath.loginRequired,require('./profile')());
-
 module.exports = router;

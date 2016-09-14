@@ -3,7 +3,17 @@ extends layout
 block content
   h1= title
 
+  
+  .annonces
+    h2 Annonces
+    .event
+      p
+        h2 
+            a(href="#trucs") Nos trucs
+        p(id="trucs")  Description, texte, annonce, blablabla
+        
   .calendrier
+    h2 Calendrier
     .event
       p
         h2 
@@ -15,9 +25,4 @@ block content
         h2 
             a(href="#ad") Avant-dernier évènement annoncé
         p(id="ad")  Description, texte, annonce, blablabla
-  .annonces
-    .event
-      p
-        h2 
-            a(href="#variable") Dernier évènement annoncé
-        p(id="variable")  Description, texte, annonce, blablabla
+  

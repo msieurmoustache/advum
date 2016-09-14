@@ -90,7 +90,7 @@ footer {
     width:100%;
     position:absolute;
     overflow:hidden;
-    margin-top:15%;
+    margin-top:30%;
 
 
 }
@@ -164,6 +164,16 @@ p:target {
 .post-content {
     padding:0;
     margin:-1%;
+}
+
+.calendrier{
+    float:left;
+    width:75%;
+}
+
+.annonces{
+    float:right;
+    width:20%;
 }
 
 
