@@ -2,10 +2,32 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-
+  
+  if user
+          p Salut, #{user.fullName}
+          
+          form(action='/logout', method='POST')
+            button.btn.btn-default(type="submit") Logout
+        else
+          p Bienvenue sur le forum de l'ADVUM
+          p
+            a.btn.btn-primary(href="/login") Connexion
+          p
+            span.small Pas de compte?
+            span &nbsp;
+            a.small(href="/register") Inscrivez-vous         
+   
   
   .all
-    .sub
+    .sub(id="annonces") 
+        h2 Annonces
+        
         .post
+            .op
+            .datestamp
+            .post-content
+                p
+            .reply
+            
+            
             

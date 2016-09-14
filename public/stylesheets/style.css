@@ -72,13 +72,18 @@ main {
     margin:auto;
     text-align:left;
     width:90%;
-    
+    font-size:120%;
+}
+
+#contact a, main a {
+    color:grey;
 }
 
 
 main >  div > h2 {
     padding-bottom:10px;
 }
+
 
 footer {
     text-align:center;
@@ -133,5 +138,4 @@ footer {
 p:target {
     display:block;
 }
-
 
